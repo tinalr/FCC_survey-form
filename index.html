@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="en">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" type="text/css" src="style.css">
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Title</h1>
+        <p id="description">Description of Survey</p>
+        <form id="survey-form" action="">
+            
+            <!--Fields-->
+            <label id="name-label" for="name">Name<input type="text" placeholder="Name" name="name" id="name" required></label>
+            <label id="email-label" for="email">Email<input type="email" placeholder="Email" name="email" id="email" required></label>
+            <label id="number-label" for="number">Number<input type="number" placeholder="Number" name="number" id="number" min="1" max="10" required></label>
+
+            <!--Dropdown-->
+            <label id="dropdown-label" for="dropdown">Dropdown
+                <select type="dropdown" placeholder="Email" name="dropdown" id="dropdown" required>
+                    <option disabled selected value>Select option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+            </label>
+            
+            <!--Radio Buttons-->
+            <label id="radio-label-yes" for="radio-yes">
+                <input id="radio-yes" type="radio" name="radio" value="yes">Yes
+            </label>
+            <label id="radio-label-no" for="radio-no">
+                <input id="radio-no" type="radio" name="radio" value="no">No
+            </label>
+
+            <!--Checkboxes-->
+            <label id="checkbox-label-red" for="checkbox-red">
+                <input id="checkbox-red" type="checkbox" name="checkbox" value="red">Red
+            </label>
+            <label id="checkbox-label-blue" for="checkbox-blue">
+                <input id="checkbox-blue" type="checkbox" name="checkbox" value="blue">Blue
+            </label>
+            <label id="checkbox-label-yellow" for="checkbox-yellow">
+                <input id="checkbox-yellow" type="checkbox" name="checkbox" value="yellow">Yellow
+            </label>
+
+            <!--TextArea-->
+            <label>Additional Comments?
+                <textarea id="textarea" name="textarea" placeholder="Write your comments here."></textarea>
+            </label>
+
+            <!--Submit-->
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
