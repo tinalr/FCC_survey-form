@@ -2,53 +2,64 @@
 <html>
     <head>
         <meta charset="UTF-8" lang="en">
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <link rel="stylesheet" type="text/css" src="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Survey Form</title>
     </head>
 
     <body>
-        <h1 id="title">Title</h1>
-        <p id="description">Description of Survey</p>
+        
         <form id="survey-form" action="">
-            
+            <h1 id="title">Sana's Sandwiches Party Platter Order Form</h1>
+            <p id="description">Thank you for choosing Sana's Sandwiches to cater your event. Please fill out the following form and we will contact you within 24 hours to confirm your order.</p>
+
+            <h2>Contact Information</h2>
             <!--Fields-->
             <label id="name-label" for="name">Name<input type="text" placeholder="Name" name="name" id="name" required></label>
+            <br>
             <label id="email-label" for="email">Email<input type="email" placeholder="Email" name="email" id="email" required></label>
-            <label id="number-label" for="number">Number<input type="number" placeholder="Number" name="number" id="number" min="1" max="10" required></label>
-
+            <br>
+            <label id="tel-label" for="tel">Telephone<input type="tel" placeholder="Telephone" name="tel" id="tel" required></label>
+            <br>
+            
+            <h2>Order Details</h2>
             <!--Dropdown-->
-            <label id="dropdown-label" for="dropdown">Dropdown
-                <select type="dropdown" placeholder="Email" name="dropdown" id="dropdown" required>
-                    <option disabled selected value>Select option</option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
+            <label id="dropdown-label" for="dropdown"><h3>Pick-Up or Delivery?</h3>
+                <select type="dropdown" name="dropdown" id="dropdown" required>
+                    <option disabled selected value>--Select one--</option>
+                    <option value="1">Pick-Up</option>
+                    <option value="2">Delivery</option>
                 </select>
             </label>
+            <br>
             
             <!--Radio Buttons-->
+            <h3>Include plates, napkins, and utensils?</h3>
             <label id="radio-label-yes" for="radio-yes">
                 <input id="radio-yes" type="radio" name="radio" value="yes">Yes
-            </label>
+            </label><br>
             <label id="radio-label-no" for="radio-no">
                 <input id="radio-no" type="radio" name="radio" value="no">No
-            </label>
+            </label><br>
+
+            <label id="number-label" for="number"><h3>How many people are you serving?</h3><input type="number" placeholder="Number" name="number" id="number" min="1" max="10" required></label><br>
 
             <!--Checkboxes-->
+            <h3>Which sandwhiches should be included in the platter?</h3>
             <label id="checkbox-label-red" for="checkbox-red">
                 <input id="checkbox-red" type="checkbox" name="checkbox" value="red">Red
-            </label>
+            </label><br>
             <label id="checkbox-label-blue" for="checkbox-blue">
                 <input id="checkbox-blue" type="checkbox" name="checkbox" value="blue">Blue
-            </label>
+            </label><br>
             <label id="checkbox-label-yellow" for="checkbox-yellow">
                 <input id="checkbox-yellow" type="checkbox" name="checkbox" value="yellow">Yellow
-            </label>
+            </label><br>
 
             <!--TextArea-->
-            <label>Additional Comments?
+            <label><h3>What food allergies and dietary restrictions will be represented at your event?</h3>
                 <textarea id="textarea" name="textarea" placeholder="Write your comments here."></textarea>
-            </label>
+            </label><br>
 
             <!--Submit-->
             <button id="submit" type="submit">Submit</button>

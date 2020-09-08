@@ -1,0 +1,11 @@
+#survey-form {
+    background-color: greenyellow;
+    width: 75%;
+    padding: 15px;
+}
+body {
+    background-color: hotpink;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
