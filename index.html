@@ -4,62 +4,72 @@
         <meta charset="UTF-8" lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap" rel="stylesheet">
         <title>Survey Form</title>
     </head>
 
     <body>
         
+        <!--Heading-->
+        <div class="heading">
+            <h1 id="title">Sandwich Party Platter Order Form</h1><br>
+            <p id="description">Thank you for choosing our sandwich shop to cater your event. Please fill out the following form and we will contact you within 24 hours to confirm your order.</p></div>
+        
         <form id="survey-form" action="">
-            <h1 id="title">Sandwich Party Platter Order Form</h1>
-            <p id="description">Thank you for choosing Sana's Sandwiches to cater your event. Please fill out the following form and we will contact you within 24 hours to confirm your order.</p>
 
             <h2>Contact Information</h2>
             <!--Fields-->
-            <label id="name-label" for="name">Name<input type="text" placeholder="Name" name="name" id="name" required></label>
-            <br>
-            <label id="email-label" for="email">Email<input type="email" placeholder="Email" name="email" id="email" required></label>
-            <br>
-            <label id="tel-label" for="tel">Telephone<input type="tel" placeholder="Telephone" name="tel" id="tel" required></label>
+            <div class="fields">
+                <label id="name-label" for="name">Name</label><input type="text" placeholder="Name" name="name" id="name" required>
+            
+
+                <label id="email-label" for="email">Email</label><input type="email" placeholder="Email" name="email" id="email" required>
+            
+
+                <label id="tel-label" for="tel">Telephone</label><input type="tel" placeholder="Telephone" name="tel" id="tel" required>
+            </div>
             <br>
             
             <h2>Order Details</h2>
             <!--Dropdown-->
-            <label id="dropdown-label" for="dropdown"><h3>Pick-Up or Delivery?</h3>
+            <div class="dropdown"><label id="dropdown-label" for="dropdown"><h3>Pick-Up or Delivery?</h3>
                 <select type="dropdown" name="dropdown" id="dropdown" required>
                     <option disabled selected value>--Select one--</option>
                     <option value="1">Pick-Up</option>
                     <option value="2">Delivery</option>
                 </select>
-            </label>
+            </label></div>
             <br>
             
             <!--Radio Buttons-->
-            <h3>Include plates, napkins, and utensils?</h3>
+            <div class="radio"><h3>Include plates, napkins, and utensils?</h3>
             <label id="radio-label-yes" for="radio-yes">
                 <input id="radio-yes" type="radio" name="radio" value="yes">Yes
             </label><br>
             <label id="radio-label-no" for="radio-no">
                 <input id="radio-no" type="radio" name="radio" value="no">No
-            </label><br>
+            </label></div><br>
 
-            <label id="number-label" for="number"><h3>How many people are you serving?</h3><input type="number" placeholder="Number" name="number" id="number" min="1" max="10" required></label><br>
+            <!--Fields-->
+            <div><label id="number-label" for="number"><h3>How many people are you serving?</h3><input type="number" placeholder="Number" name="number" id="number" min="10" max="500" required></label></div><br>
 
             <!--Checkboxes-->
-            <h3>Which sandwhiches should be included in the platter?</h3>
-            <label id="checkbox-label-red" for="checkbox-red">
-                <input id="checkbox-red" type="checkbox" name="checkbox" value="red">Red
+            <div class="checkbox"><h3>Which sandwhiches should be included in the platter? (Select all that apply)</h3>
+            <label id="checkbox-label-ital" for="checkbox-ital">
+                <input id="checkbox-ital" type="checkbox" name="checkbox" value="ital">Spicy Italian
             </label><br>
-            <label id="checkbox-label-blue" for="checkbox-blue">
-                <input id="checkbox-blue" type="checkbox" name="checkbox" value="blue">Blue
+            <label id="checkbox-label-tur" for="checkbox-tur">
+                <input id="checkbox-tur" type="checkbox" name="checkbox" value="tur">Turkey Club
             </label><br>
-            <label id="checkbox-label-yellow" for="checkbox-yellow">
-                <input id="checkbox-yellow" type="checkbox" name="checkbox" value="yellow">Yellow
-            </label><br>
+            <label id="checkbox-label-veg" for="checkbox-veg">
+                <input id="checkbox-veg" type="checkbox" name="checkbox" value="veg">Veggie Mozarella
+            </label></div><br>
 
             <!--TextArea-->
-            <label><h3>What food allergies and dietary restrictions will be represented at your event?</h3>
+            <div class="textarea">
+                <label><h3>What food allergies and dietary restrictions will be represented at your event?</h3>
                 <textarea id="textarea" name="textarea" placeholder="Write your comments here."></textarea>
-            </label><br>
+            </label></div><br>
 
             <!--Submit-->
             <button id="submit" type="submit">Submit</button>

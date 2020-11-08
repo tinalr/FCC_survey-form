@@ -1,11 +1,55 @@
-#survey-form {
-    background-color: greenyellow;
-    width: 75%;
-    padding: 15px;
-}
 body {
-    background-color: #af69ff;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    background-image: url(sandwich-cuisine.jpg);
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    ;
+    
+}
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive;
+}
+#survey-form {
+    margin: 0 90% 30px 10%;
+    background-color: white;
+    width: 400px;
+    box-shadow: 3px 10px 3px 5px rgba(112, 69, 59, .4);
+    padding: 30px;
+}
+.heading {
+    background-color: rgb(90, 55, 47);
+    color: whitesmoke;
+    margin: 30px 90% 0 10%;
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 3px 1px 3px 5px rgba(112, 69, 59, .4);
+}
+#title{
+    margin: 0;
+}
+#description {
+    text-align: left;
+    margin: 0;
+}
+.fields {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 30px repeat(3);
+}
+#number {
+width: 100px;
+}
+#submit {
+    color: whitesmoke;
+    background-color: rgb(61, 70, 61);
+    padding: 10px;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+#textarea {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
