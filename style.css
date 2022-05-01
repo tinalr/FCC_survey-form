@@ -1,10 +1,8 @@
 body {
     margin: 0;
-    background-image: url(sandwich-cuisine.jpg);
+    background-image: linear-gradient(rgba(90, 55, 47, 0.5), rgba(112, 69, 59, 0.5)), url(sandwich-cuisine.jpg);
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    ;
-    
 }
 h1, h2, h3, h4 {
     font-family: 'Dancing Script', cursive;
@@ -26,6 +24,7 @@ h1, h2, h3, h4 {
     box-shadow: 3px 1px 3px 5px rgba(112, 69, 59, .4);
 }
 #title{
+    text-align: left;
     margin: 0;
 }
 #description {
