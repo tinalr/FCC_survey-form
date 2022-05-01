@@ -14,69 +14,72 @@
     <body>
         
         <!--Heading-->
-        <div class="heading">
-            <h1 id="title">Sandwich Party Platter Order Form</h1><br>
-            <p id="description">Thank you for choosing our sandwich shop to cater your event. Please fill out the following form and we will contact you within 24 hours to confirm your order.</p></div>
-        
-        <form id="survey-form" action="">
-
-            <h2>Contact Information</h2>
-            <!--Fields-->
-            <div class="fields">
-                <label id="name-label" for="name">Name</label><input type="text" placeholder="Name" name="name" id="name" required>
-            
-
-                <label id="email-label" for="email">Email</label><input type="email" placeholder="Email" name="email" id="email" required>
-            
-
-                <label id="tel-label" for="tel">Telephone</label><input type="tel" placeholder="Telephone" name="tel" id="tel" required>
+        <div id="order-form">
+            <div class="heading">
+                <h1 id="title">Sandwich Party Platter Order Form</h1><br>
+                <p id="description">Thank you for choosing our sandwich shop to cater your event. Please fill out the following form and we will contact you within 24 hours to confirm your order.</p>
             </div>
-            <br>
             
-            <h2>Order Details</h2>
-            <!--Dropdown-->
-            <div class="dropdown"><label id="dropdown-label" for="dropdown"><h3>Pick-Up or Delivery?</h3>
-                <select type="dropdown" name="dropdown" id="dropdown" required>
-                    <option disabled selected value>--Select one--</option>
-                    <option value="1">Pick-Up</option>
-                    <option value="2">Delivery</option>
-                </select>
-            </label></div>
-            <br>
-            
-            <!--Radio Buttons-->
-            <div class="radio"><h3>Include plates, napkins, and utensils?</h3>
-            <label id="radio-label-yes" for="radio-yes">
-                <input id="radio-yes" type="radio" name="radio" value="yes">Yes
-            </label><br>
-            <label id="radio-label-no" for="radio-no">
-                <input id="radio-no" type="radio" name="radio" value="no">No
-            </label></div><br>
-
-            <!--Fields-->
-            <div><label id="number-label" for="number"><h3>How many people are you serving?</h3><input type="number" placeholder="Number" name="number" id="number" min="10" max="500" required></label></div><br>
-
-            <!--Checkboxes-->
-            <div class="checkbox"><h3>Which sandwhiches should be included in the platter? (Select all that apply)</h3>
-            <label id="checkbox-label-ital" for="checkbox-ital">
-                <input id="checkbox-ital" type="checkbox" name="checkbox" value="ital">Spicy Italian
-            </label><br>
-            <label id="checkbox-label-tur" for="checkbox-tur">
-                <input id="checkbox-tur" type="checkbox" name="checkbox" value="tur">Turkey Club
-            </label><br>
-            <label id="checkbox-label-veg" for="checkbox-veg">
-                <input id="checkbox-veg" type="checkbox" name="checkbox" value="veg">Veggie Mozarella
-            </label></div><br>
-
-            <!--TextArea-->
-            <div class="textarea">
-                <label><h3>What food allergies and dietary restrictions will be represented at your event?</h3>
-                <textarea id="textarea" name="textarea" placeholder="Write your comments here."></textarea>
-            </label></div><br>
-
-            <!--Submit-->
-            <button id="submit" type="submit">Submit</button>
-
-        </form>
+            <form id="survey-form" action="">
+    
+                <h2>Contact Information</h2>
+                <!--Fields-->
+                <div class="fields">
+                    <label id="name-label" for="name">Name</label><input type="text" placeholder="Name" name="name" id="name" required>
+                
+    
+                    <label id="email-label" for="email">Email</label><input type="email" placeholder="Email" name="email" id="email" required>
+                
+    
+                    <label id="tel-label" for="tel">Telephone</label><input type="tel" placeholder="Telephone" name="tel" id="tel" required>
+                </div>
+                <br>
+                
+                <h2>Order Details</h2>
+                <!--Dropdown-->
+                <div class="dropdown"><label id="dropdown-label" for="dropdown"><h3>Pick-Up or Delivery?</h3>
+                    <select type="dropdown" name="dropdown" id="dropdown" required>
+                        <option disabled selected value>--Select one--</option>
+                        <option value="1">Pick-Up</option>
+                        <option value="2">Delivery</option>
+                    </select>
+                </label></div>
+                <br>
+                
+                <!--Radio Buttons-->
+                <div class="radio"><h3>Include plates, napkins, and utensils?</h3>
+                <label id="radio-label-yes" for="radio-yes">
+                    <input id="radio-yes" type="radio" name="radio" value="yes">Yes
+                </label><br>
+                <label id="radio-label-no" for="radio-no">
+                    <input id="radio-no" type="radio" name="radio" value="no">No
+                </label></div><br>
+    
+                <!--Fields-->
+                <div><label id="number-label" for="number"><h3>How many people are you serving?</h3><input type="number" placeholder="Number" name="number" id="number" min="10" max="500" required></label></div><br>
+    
+                <!--Checkboxes-->
+                <div class="checkbox"><h3>Which sandwhiches should be included in the platter? (Select all that apply)</h3>
+                <label id="checkbox-label-ital" for="checkbox-ital">
+                    <input id="checkbox-ital" type="checkbox" name="checkbox" value="ital">Spicy Italian
+                </label><br>
+                <label id="checkbox-label-tur" for="checkbox-tur">
+                    <input id="checkbox-tur" type="checkbox" name="checkbox" value="tur">Turkey Club
+                </label><br>
+                <label id="checkbox-label-veg" for="checkbox-veg">
+                    <input id="checkbox-veg" type="checkbox" name="checkbox" value="veg">Veggie Mozarella
+                </label></div><br>
+    
+                <!--TextArea-->
+                <div class="textarea">
+                    <label><h3>What food allergies and dietary restrictions will be represented at your event?</h3>
+                    <textarea id="textarea" name="textarea" placeholder="Write your comments here."></textarea>
+                </label></div><br>
+    
+                <!--Submit-->
+                <button id="submit" type="submit">Submit</button>
+    
+            </form>
+        </div>
     </body>
 </html>
